@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, a, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #e5e9ee;
+}
+
+header {
+    height: 90px;
+    line-height: 90px;
+    background-color: #e55039;
+}
+
+header h1 {
+    text-align: center;
+    color: #eeeeee;
+}
+
+.score-board {
+    text-align: center;
+    width: 30%;
+    margin: 1.5em auto;
+    background-color: #eeeeee;
+    padding: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.score-board div {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.score-board #score {
+    font-size: 1.5em;
+    margin: 0 30px;
+}
+
+.picker .choices {
+    display: flex;
+    justify-content: center;
+}
+
+.picker .choices .choice {
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.picker .choices .choice:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.picker .choices .choice img {
+    width: 6em;
+}
+
+.picker #result-title{
+    text-align: center;
+    transition: ease-in-out 0.2s color;
+    margin: 20px 0;
+}
+
+.picker p {
+    text-align: center;
+}
+
+.fight-area {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .fight-area {
+      display: none;
+    }
+  }
+
+.fight-area div {
+    margin: 0 10px;
+}
+
+.fight-area div img {
+    width: 10em;
+    border: 3px solid #2d98da;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s border-color;
+}
+
+.fight-area .fight-versus p {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #3c6382;
+    text-align: center;
+    color: #eeeeee;
+    min-height: 90px;
+    line-height: 45px;
+}
+
+footer p a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #aaaaaa;
+    transition: ease-in-out 0.2s color;
+}

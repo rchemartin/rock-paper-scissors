@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Rock Paper Scissors !</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Rock, Paper, Scissors !</h1>
+        </header>
+
+        <div class="score-board">
+            <div id="user-label"><p>You</p></div>
+            <div id="score"><p><span id="user-score">0</span> : <span id="ia-score">0</span></p></div>
+            <div id="ia-label"><p>IA</p></div>
+        </div>
+
+        <div class="picker">
+            <p>Choose your fighter :</p>
+            <div class="choices">
+                <div data-choice="r" class="choice">
+                    <img src="images/r.png" alt="Rock" id="r">
+                </div>
+                <div data-choice="p" class="choice">
+                    <img src="images/p.png" alt="Paper" id="p">
+                </div>
+                <div data-choice="s" class="choice">
+                    <img src="images/s.png" alt="Scissors" id="s">
+                </div>
+            </div>
+            <h2 id="result-title">Play !</h2>
+        </div>
+        
+
+        <div class="fight-area">
+            <div class="player">
+                <img src="images/play.png" id="player-icon" alt="Rock" id="rock">
+            </div>
+            <div class="fight-versus">
+                <p>VS</p>
+            </div>
+            <div class="ia">
+                <img src="images/play.png" id="ia-icon" alt="Rock" id="rock">
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by <a href="https://www.linkedin.com/in/romain-chemartin-640a39128/">Romain Chemartin</a></p>
+            <p>Images created by Studio Fibonacci from Noun project</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
